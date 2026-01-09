@@ -79,7 +79,7 @@ git commit -m "docs: ajout des consignes de maintenance"
 git push origin main
 ```
 
-🎓 Étape 4 : Proposer votre modification au Professeur
+## 🎓 Étape 4 : Proposer votre modification au Professeur
 Comme GitHub Classroom ne crée pas un "vrai" fork, il faut forcer le lien pour proposer votre amélioration.
 
 1. Créer une branche de contribution
@@ -111,7 +111,7 @@ head repository : [Votre Dépôt d'Assignation] | compare : contribution-readme
 
 Vérifiez que seul le README.md apparaît dans les changements, puis cliquez sur Create Pull Request.
 
-📥 Étape 5 : Récupérer les mises à jour du Professeur
+## 📥 Étape 5 : Récupérer les mises à jour du Professeur
 Si le professeur accepte votre PR ou modifie le sujet :
 
 Sur la page de votre dépôt GitHub, cliquez sur Sync fork puis Update branch.
@@ -124,3 +124,10 @@ En local, récupérez les changements : git pull origin main.
 [ ] Le fichier docker-compose.yml est présent sur ma branche main.
 
 [ ] Ma Pull Request vers le dépôt "Upstream" ne contient que les changements du README.
+
+## Étape 6 : Guide de maintenance
+
+Pour **arrêter** les conteneurs et **nettoyer** les réseaux Docker, il faut utiliser la commande suivante :
+```bash
+docker-compose down
+```
